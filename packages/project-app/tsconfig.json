@@ -7,8 +7,18 @@
         "target": "ES5",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "incremental": true
+        "incremental": true,
+        "moduleResolution": "Node",
+        "jsx": "preserve",
+        "outDir": "./dist/",
+        "noEmit": true,
+        "allowSyntheticDefaultImports": true
     },
     "include": ["next-env.d.ts", "src/"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "./dist"],
+    "references": [
+        {
+            "path": "../project-core/tsconfig.json"
+        }
+    ]
 }

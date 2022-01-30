@@ -4,5 +4,7 @@
     "compilerOptions": {
         "outDir": "./dist/"
     },
-    "include": ["src/"]
+    "include": ["src/"],
+    "exclude": ["dist/*"],
+    "references": [{ "path": "../project-core/tsconfig.json" }]
 }
